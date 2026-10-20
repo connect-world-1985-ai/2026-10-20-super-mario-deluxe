@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="Hopbound Deluxe — an original four-course platformer that runs in the browser.">
+  <title>Hopbound Deluxe</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect fill='%2314a090' width='16' height='16' rx='3'/%3E%3Crect fill='%23ffd25a' x='6' y='3' width='4' height='4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="stage">
+    <canvas id="game" width="384" height="224" aria-label="Hopbound Deluxe game canvas"></canvas>
+  </div>
+  <div id="touch" aria-hidden="true">
+    <button id="btn-left" type="button" data-act="left" aria-label="Move left">◀</button>
+    <button id="btn-down" type="button" data-act="down" aria-label="Down">▼</button>
+    <button id="btn-right" type="button" data-act="right" aria-label="Move right">▶</button>
+    <button id="btn-run" type="button" data-act="run" aria-label="Run or shoot">RUN</button>
+    <button id="btn-jump" type="button" data-act="jump" aria-label="Jump">JUMP</button>
+    <button id="btn-pause" type="button" data-act="pause" aria-label="Pause">II</button>
+    <button id="btn-mute" type="button" data-act="mute" aria-label="Mute">♪</button>
+  </div>
+  <script src="js/audio.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/sprites.js"></script>
+  <script src="js/levels.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
